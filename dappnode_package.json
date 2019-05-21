@@ -1,24 +1,25 @@
 {
   "name": "ropsten.dnp.dappnode.eth",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Ropsten chain for DAppNode based on go-ethereum v1.8.17",
   "avatar": "ropsten.png",
   "type": "library",
+  "chain": "ethereum",
   "image": {
     "path": "",
     "hash": "",
     "size": "",
     "restart": "always",
     "volumes": [
-      "ropsten:/home/.ethereum/"
+      "ropsten:/root/.ethereum/"
+    ],
+    "environment": [
+      "EXTRA_OPTS=--rpcapi eth,net,web3,txpool"
     ],
     "ports": [
       "33333:30303",
       "33333:30303/udp",
       "33334:30303/udp"
-    ],
-    "environment": [
-      "EXTRA_OPTS"
     ]
   },
   "author": "DAppNode Association <admin@dappnode.io> (https://github.com/dappnode)",
