@@ -3,7 +3,7 @@
   "version": "0.2.1",
   "upstreamVersion": "1.8.27",
   "shortDescription": "Ethereum testnet with PoW - closest to Mainnet",
-  "description": "Ropsten Ethereum, also known as “Ethereum Testnet”, are as the name implies, a testing network that runs the same protocol as Ethereum does and is used to testing purposes before deploying on the main network (Mainnet). You can explore the chain on [etherscan](https://ropsten.etherscan.io/",
+  "description": "Ropsten Ethereum, also known as “Ethereum Testnet”, is a testing network that runs the same protocol as Ethereum Mainnet. It is useful for last-step stepping which requires conditions as close to Mainnet as possible. You can explore the chain on [etherscan](https://ropsten.etherscan.io/",
   "avatar": "/ipfs/QmQ9UqjybFLPSqJJgMdM3QsRj3mrnApSNwiHArJXFt7uz3",
   "type": "library",
   "chain": "ethereum",
