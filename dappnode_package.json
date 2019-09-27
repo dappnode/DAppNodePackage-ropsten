@@ -1,30 +1,17 @@
 {
   "name": "ropsten.dnp.dappnode.eth",
-  "version": "0.1.1",
-  "description": "Ropsten chain for DAppNode based on go-ethereum v1.8.27",
-  "avatar": "/ipfs/QmQ9UqjybFLPSqJJgMdM3QsRj3mrnApSNwiHArJXFt7uz3",
+  "version": "0.3.0",
+  "upstreamVersion": "1.9.5",
+  "shortDescription": "Ethereum testnet with PoW - closest to Mainnet",
+  "description": "Ropsten Ethereum, also known as “Ethereum Testnet”, is a testing network that runs the same protocol as Ethereum Mainnet. It is useful for last-step stepping which requires conditions as close to Mainnet as possible. You can explore the chain on [etherscan](https://ropsten.etherscan.io/)",
   "type": "library",
   "chain": "ethereum",
-  "image": {
-    "path": "",
-    "hash": "",
-    "size": "",
-    "restart": "always",
-    "volumes": [
-      "ropsten:/root/.ethereum/"
-    ],
-    "environment": [
-      "EXTRA_OPTS=--rpcapi eth,net,web3,txpool"
-    ],
-    "ports": [
-      "33333:30303",
-      "33333:30303/udp",
-      "33334:30303/udp"
-    ]
-  },
   "author": "DAppNode Association <admin@dappnode.io> (https://github.com/dappnode)",
   "contributors": [
     "Eduardo Antuña <eduadiez@gmail.com> (https://github.com/eduadiez)"
+  ],
+  "categories": [
+    "Developer tools"
   ],
   "keywords": [
     "DAppNode",
@@ -33,12 +20,13 @@
     "Ropsten",
     "Geth"
   ],
-  "homepage": {
-    "homepage": "https://github.com/dappnode/DAppNodePackage-ropsten#readme"
+  "links": {
+    "homepage": "https://github.com/dappnode/DAppNodePackage-ropsten#readme",
+    "api": "http://ropsten.dappnode:8545"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/dappnode/DAppNodePackage-ropsten.git"
+    "url": "https://github.com/dappnode/DAppNodePackage-ropsten.git"
   },
   "bugs": {
     "url": "https://github.com/dappnode/DAppNodePackage-ropsten/issues"

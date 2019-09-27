@@ -1,17 +1,18 @@
 version: '3.4'
+
 services:
     ropsten.dnp.dappnode.eth:
-        image: 'ropsten.dnp.dappnode.eth:0.1.1'
+        image: 'ropsten.dnp.dappnode.eth:0.3.0'
         build: ./build
         volumes:
-            - 'ropsten:/home/.ethereum/'
-        environment:
-            - EXTRA_OPTS=
+            - 'ropsten:/root/.ethereum/'
         ports:
-            - '127.0.0.1:8546:8546'
-            - '127.0.0.1:8545:8545'
-            - '33333:30303'
-            - '33333:30303/udp'
-            - '33334:30304/udp'
+            - '30303'
+            - '30303/udp'
+            - '30304/udp'
+        restart: always
+        environment:
+            - EXTRA_OPTS=--rpcapi eth,net,web3,txpool
+
 volumes:
     ropsten: {}
