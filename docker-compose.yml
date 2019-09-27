@@ -5,7 +5,7 @@ services:
         image: 'ropsten.dnp.dappnode.eth:0.3.0'
         build: ./build
         volumes:
-            - 'ropsten:/home/.ethereum/'
+            - 'ropsten:/root/.ethereum/'
         ports:
             - '30303'
             - '30303/udp'

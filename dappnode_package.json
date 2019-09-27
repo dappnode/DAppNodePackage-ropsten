@@ -1,9 +1,9 @@
 {
   "name": "ropsten.dnp.dappnode.eth",
   "version": "0.3.0",
-  "upstreamVersion": "1.9.4",
+  "upstreamVersion": "1.9.5",
   "shortDescription": "Ethereum testnet with PoW - closest to Mainnet",
-  "description": "Ropsten Ethereum, also known as “Ethereum Testnet”, is a testing network that runs the same protocol as Ethereum Mainnet. It is useful for last-step stepping which requires conditions as close to Mainnet as possible. You can explore the chain on [etherscan](https://ropsten.etherscan.io/",
+  "description": "Ropsten Ethereum, also known as “Ethereum Testnet”, is a testing network that runs the same protocol as Ethereum Mainnet. It is useful for last-step stepping which requires conditions as close to Mainnet as possible. You can explore the chain on [etherscan](https://ropsten.etherscan.io/)",
   "type": "library",
   "chain": "ethereum",
   "author": "DAppNode Association <admin@dappnode.io> (https://github.com/dappnode)",
