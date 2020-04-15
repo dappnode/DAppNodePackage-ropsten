@@ -8,11 +8,19 @@
     "link": "http://my.dappnode/#/sdk/publish/r=ropsten.dnp.dappnode.eth&v=0.3.0&h=%2Fipfs%2FQmdgWRUf6zPKJBY32xJPY5rA2vSWRpRdRJ3b5emSm9ANGU"
   },
   "0.3.1": {
-    "hash": "/ipfs/QmdyxZKgBmD6hnC9NnUYptuLADKTYss1zJGy67vc8FX3Xr",
+    "hash": "/ipfs/QmbNCAsL6WgE4236KxxSsEQoFc2oeKTXDK6UgYLMrPoRFk",
     "type": "directory",
     "uploadedTo": {
-      "dappnode": "Fri, 08 Nov 2019 21:40:50 GMT"
+      "dappnode": "Wed, 15 Apr 2020 07:27:39 GMT"
     },
     "link": "http://my.dappnode/#/sdk/publish/r=ropsten.dnp.dappnode.eth&v=0.3.1&h=%2Fipfs%2FQmdyxZKgBmD6hnC9NnUYptuLADKTYss1zJGy67vc8FX3Xr"
+  },
+  "0.3.2": {
+    "hash": "/ipfs/QmfVhGDHG1ooMqxXjdS1oDxNE8DWyc3XKPmPruAbWTMh6J",
+    "type": "directory",
+    "uploadedTo": {
+      "dappnode": "Wed, 15 Apr 2020 07:28:37 GMT"
+    },
+    "link": "http://my.dappnode/#/sdk/publish/r=ropsten.dnp.dappnode.eth&v=0.3.2&h=%2Fipfs%2FQmfVhGDHG1ooMqxXjdS1oDxNE8DWyc3XKPmPruAbWTMh6J"
   }
 }
