@@ -1,76 +1,56 @@
-# Ropsten Testnet DAppNode package
+<!-- :female_detective: Looking for a new champion -->
 
-[![DAppNodeStore Available](https://img.shields.io/badge/DAppNodeStore-Available-brightgreen.svg)](http://my.admin.dnp.dappnode.eth/#/installer/ropsten.dnp.dappnode.eth)
+# DAppNode package _Ropsten_
 
-[![Website dappnode.io](https://img.shields.io/badge/Website-dappnode.io-brightgreen.svg)](https://dappnode.io/)
-[![Documentation Wiki](https://img.shields.io/badge/Documentation-Wiki-brightgreen.svg)](https://github.com/dappnode/DAppNode/wiki)
-[![GIVETH Campaign](https://img.shields.io/badge/GIVETH-Campaign-1e083c.svg)](https://beta.giveth.io/campaigns/5b44b198647f33526e67c262)
-[![RIOT DAppNode](https://img.shields.io/badge/RIOT-DAppNode-blue.svg)](https://riot.im/app/#/room/#DAppNode:matrix.org)
-[![Twitter Follow](https://img.shields.io/twitter/follow/espadrine.svg?style=social&label=Follow)](https://twitter.com/DAppNode?lang=es)
+<!--DAppNode package logo (could be added with an hyperlink to a youtube video): -->
 
-Dappnode package responsible for providing the Rinkeby chain ( based on go-ethereum v1.8.27)
+[![](avatar-ropsten.png)](https://www.youtube.com/watch?v=uquMg_T9oZQ)
 
-Aragon Package Manager Repo at [0x031340b7aA2C5c28719894F3BacddEaD5e7F2987](https://etherscan.io/address/0x031340b7aA2C5c28719894F3BacddEaD5e7F2987)
+<!--Brief introduction about the source project (official project definition is an option): -->
 
-You can use this package without installing it in your DAppNode following these instructions:
+Get Ropsten Ethereum faucet [at this site](https://faucet.ropsten.be/)
 
-## Prerequisites
+### Why _Ropsten_ ?
 
-- git
+<!--What can you do with this package?: -->
 
-   Install [git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) commandline tool.
+Ropsten Ethereum, also known as “Ethereum Testnet”, are as the name implies, a testing network that runs the same protocol as Ethereum does and is used to testing purposes before deploying on the main network (Mainnet).
 
-- docker
-
-   Install [docker](https://docs.docker.com/engine/installation). The community edition (docker-ce) will work. In Linux make sure you grant permissions to the current user to use docker by adding current user to docker group, `sudo usermod -aG docker $USER`. Once you update the users group, exit from the current terminal and open a new one to make effect.
-
-- docker-compose
-
-   Install [docker-compose](https://docs.docker.com/compose/install)
-   
-**Note**: Make sure you can run `git`, `docker ps`, `docker-compose` without any issue and without sudo command.
-
-
-## Buidling
-
-`docker-compose build`
-
-## Running
-
-### Start
-
-`docker-compose up -d`
-
-### View logs
-
-`docker-compose logs -f`
-
-### Stop
-
-`docker-compose down`
-
-## Extra options
+### Extra options
 
 You can write extra options on the adminui or edit the `docker-compose.yml` and add extra options, such as:
+
 ```
  - EXTRA_OPTS=--syncmode full --gcmode archive --wsapi "db,eth,net,ssh,miner,web3,personal,admin"
 ```
 
-## Connect using web3js
+### Connect using web3js
 
 If the package is running and you're connected to your dappnode you can use:
+
 ```
 var Web3 = require('web3');
 var web3 = new Web3('ws://my.ropsten.dnp.dappnode.eth:8546')
 web3.eth.getBlockNumber().then(console.log)
 ```
+
 In case you are running it locally:
+
 ```
 var Web3 = require('web3');
 var web3 = new Web3('ws://127.0.0.1:8546')
 web3.eth.getBlockNumber().then(console.log)
 ```
 
-## License
+### Manteinance
+
+<!--Table with champion/s mantainers, versions and update status -->
+<!--UPDATED: :x: OR :heavy_check_mark: -->
+
+|      Updated       |    Champion/s    |
+| :----------------: | :--------------: |
+| :heavy_check_mark: | @pablomendezroyo |
+
+### License
 
 This project is licensed under the GNU General Public License v3.0 - see the [LICENSE](LICENSE) file for details
