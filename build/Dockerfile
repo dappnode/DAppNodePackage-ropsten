@@ -1,4 +1,6 @@
-FROM ethereum/client-go:v1.9.12 as geth
+ARG UPSTREAM_VERSION
+
+FROM ethereum/client-go:${UPSTREAM_VERSION} as geth
 
 # Pull Geth into a second stage deploy alpine container
 FROM alpine:edge
