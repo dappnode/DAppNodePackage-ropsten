@@ -8,4 +8,4 @@ FROM alpine:edge
 RUN apk add --no-cache ca-certificates
 COPY --from=geth /usr/local/bin/geth /usr/local/bin/geth
 
-ENTRYPOINT geth --testnet --rpc --rpcaddr 0.0.0.0 --rpccorsdomain "*" --rpcvhosts "*" --ws --wsorigins "*" --wsaddr 0.0.0.0 $EXTRA_OPTS
+ENTRYPOINT geth --testnet --rpc --rpcaddr 0.0.0.0 --rpccorsdomain "*" --rpcvhosts "*" --ws --wsorigins "*" --wsaddr 0.0.0.0 $EXTRA_OPTIONS
