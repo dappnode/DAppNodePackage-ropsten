@@ -1,7 +1,7 @@
 version: "3.4"
 services:
   ropsten.dnp.dappnode.eth:
-    image: "ropsten.dnp.dappnode.eth:0.3.3"
+    image: "ropsten.dnp.dappnode.eth:0.3.5"
     build:
       context: ./build
       args:
