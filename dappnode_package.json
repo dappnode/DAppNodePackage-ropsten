@@ -1,7 +1,7 @@
 {
   "name": "ropsten.dnp.dappnode.eth",
   "version": "0.3.5",
-  "upstreamVersion": "v1.10.10",
+  "upstreamVersion": "v1.10.11",
   "upstreamRepo": "ethereum/go-ethereum",
   "upstreamArg": "UPSTREAM_VERSION",
   "shortDescription": "Ethereum testnet with PoW - closest to Mainnet",
