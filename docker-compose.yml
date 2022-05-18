@@ -3,7 +3,7 @@ services:
   ropsten.dnp.dappnode.eth:
     image: "ropsten.dnp.dappnode.eth:0.3.5"
     build:
-      context: ./build
+      context: .
       args:
         UPSTREAM_VERSION: v1.10.17
     volumes:
