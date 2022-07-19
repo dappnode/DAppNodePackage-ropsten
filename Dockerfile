@@ -12,6 +12,7 @@ ENTRYPOINT geth --ropsten \
     --ws.addr 0.0.0.0 \
     --syncmode ${SYNCMODE:-snap} \ 
     --metrics --metrics.addr 0.0.0.0 \ 
+    --authrpc.addr 0.0.0.0 \
     --authrpc.port 8551 \
     --authrpc.vhosts "*" \
     --authrpc.jwtsecret "/jwtsecret" \
