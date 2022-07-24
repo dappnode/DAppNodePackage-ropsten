@@ -14,7 +14,8 @@ services:
       - 30304/udp
     restart: always
     environment:
-      - "EXTRA_OPTIONS=--http.api,engine,eth,net,web3,txpool"
+      - OVERRIDE_TTD=50000000000000000
+      - "EXTRA_OPTIONS=--http.api engine,eth,net,web3,txpool"
       - SYNCMODE
 volumes:
   ropsten: {}

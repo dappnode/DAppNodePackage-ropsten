@@ -18,5 +18,5 @@ ENTRYPOINT geth --ropsten \
     --authrpc.port 8551 \
     --authrpc.vhosts "*" \
     --authrpc.jwtsecret "/jwtsecret" \
-    --override.terminaltotaldifficulty 50000000000000000 \
+    --override.terminaltotaldifficulty $OVERRIDE_TTD \
     $EXTRA_OPTIONS
